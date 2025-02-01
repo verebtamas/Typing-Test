@@ -2,7 +2,7 @@
     "name": "typing-test",
     "version": "0.0.1",
     "private": true,
-    "homepage": ".",
+    "homepage": "https://verebtamas.github.io/Typing-Test",
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.1",
         "@testing-library/react": "^12.1.2",
@@ -28,7 +28,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
